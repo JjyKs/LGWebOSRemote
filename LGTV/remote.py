@@ -268,3 +268,8 @@ class LGTVRemote(WebSocketClient):
     def openYoutubeURL(self, url, callback=None):
         payload = {"id": "youtube.leanback.v4", "params": {"contentTarget": url}}
         self.__send_command("request", "ssap://system.launcher/launch", payload, callback)
+    
+    def getCurrentApp(self, callback=None):
+        self.__send_command("request", "ssap://com.webos.applicationManager/getForegroundAppInfo", None, callback, "launcher")
+
+        
