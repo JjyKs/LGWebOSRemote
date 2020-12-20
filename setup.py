@@ -3,7 +3,7 @@ from setuptools import setup
 
 LGTV_VERSION = '0.2'
 LGTV_DOWNLOAD_URL = (
-    'https://github.com/jjyksr/LGWebOSRemote/tarball/' + LGTV_VERSION
+    'https://github.com/jjyks/LGWebOSRemote/tarball/' + LGTV_VERSION
 )
 
 setup(
